@@ -49,7 +49,6 @@ func main() {
 
 func createTransaction() string {
 	tarventTxSettings := map[string]interface{}{
-		"language": "en-US",
 		"tracking": map[string]interface{}{
 			"opens":  true,
 			"clicks": true,

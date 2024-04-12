@@ -17,8 +17,8 @@ public class Main {
 
     public static void main(String[] args) {
         String requestBody = createTransaction();
-        String apiKey = "1f53760c33f04a898b6d81d31bdf059e0fa11b08271d48f882b05d338c7ff665";
-        String accountId = "584146918017388545";
+        String apiKey = "0123456789012345678901263456789012345678901234567890123456789012";
+        String accountId = "012345678901234567";
 
         HttpClient client = HttpClient.newBuilder().build();
         HttpRequest request = HttpRequest.newBuilder()
@@ -51,7 +51,7 @@ public class Main {
         Map<String, Object> tarventTxHeader = new HashMap<>();
         Map<String, Object> from = new HashMap<>();
         from.put("name", "Tarvent Team");
-        from.put("emailAddress", "hello@tarvent.com");
+        from.put("emailAddress", "hello@yoursendingdomain.com");
         tarventTxHeader.put("from", from);
         tarventTxHeader.put("subject", "This is a test");
 
@@ -69,7 +69,7 @@ public class Main {
 
         List<Map<String, Object>> recipientList = new ArrayList<>();
         recipientList
-                .add(addRecipient("Developer", "derekj@tarvent.com", null, "TO", new ArrayList<Map<String, String>>(), List.of(Map.of("name", "FirstName", "value", "Developer"))));
+                .add(addRecipient("Developer", "developer@tarvent.com", null, "TO", new ArrayList<Map<String, String>>(), List.of(Map.of("name", "FirstName", "value", "Developer"))));
 
         Map<String, Object> transactionRequest = new HashMap<>();
         transactionRequest.put("groupName", "Notification Email");

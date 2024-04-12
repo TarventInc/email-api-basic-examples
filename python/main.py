@@ -3,7 +3,6 @@ import requests
 
 def create_transaction():
   tarvent_tx_settings = {
-    "language": "en-US",
     "tracking": {
       "opens": True,
       "clicks": True,

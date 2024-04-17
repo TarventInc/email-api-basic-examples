@@ -8,4 +8,4 @@ To get this example running do the following:
 6. Run you java program
 7. See the magic happen!
 
-NOTE: To use this code the package `com.fasterxml.jackson.core.JsonProcessingException` must be included in your java program.
+NOTE: To use this code, the package `com.fasterxml.jackson.core.JsonProcessingException` must be included in your java program.
